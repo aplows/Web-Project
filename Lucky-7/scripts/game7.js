@@ -39,6 +39,7 @@ function playGame() {
 			highRolls = rollCounter;}
 			
 		rollCounter++;
+		sum = 0;
 	}
 	
 	document.getElementById("results").style.display = "block";
