@@ -19,7 +19,7 @@ function playGame() {
 	var highRolls = 0;
 	var sum = 0;
 	
-	if (bet == "" || bet < 0) {
+	if (bet == "" || bet <= 0) {
         alert("Please enter a bet amount higher than 0");
 		return false;
     }
