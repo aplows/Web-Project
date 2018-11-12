@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+	Name: Anthony Plows
+	Date Created: 1 Nov 2018
+	Most recent revision:
+	
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Menu</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<link rel="stylesheet" type="text/css" href="style/restaurantStyles.css" />
+		
+		<!-- stylesheet for house icon -->
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+		
+		<!-- internal stylesheet -->
+		<style>
+			body {
+				background-color:#CCCC99;}
+				
+			h4, h2, h5 {
+				text-align: center;}
+				
+			.menu-item {
+				text-align: center;}
+				
+			table, th, td {  
+				padding: 10px 0px 10px 10px;}
+				
+			th {
+				font-size: 1.2em;}
+				
+			td {
+				width:70%;}
+				
+				
+			table {
+				width:40%; 
+				border:1px solid black; 
+				margin:auto; 
+				text-align:left;
+				border-spacing:0;}
+				
+			tr:nth-child(even) {
+				background-color: #666633;}
+				
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Classic American Diner</h1>
+			<h2>We are pleased to anounce that we are opening a new location next month!</h2>
+		</header>
+		
+		<hr />
+		
+		<nav>
+			<p><a class="btn badge-pill" href="index.html"><i class='fas fa-home'></i></a>
+			<a class="btn badge-pill" href="">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+		</nav>
+
+		<hr />
+		
+		<noscript>
+			<h5>JavaScript is not enabled! This site works best with it enabled!</h5>
+		</noscript>
+		
+		<div id="news-slides" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active>
+						<img src="images/sign-post-location.png" alt="new location">
+					</div>
+					<div class="carousel-item>
+						<img src="images/sign-post-season.png" alt="new seasonal menu">
+					</div>
+					<div class="carousel-item>
+						<img src="images/sign-post-drink.png" alt="drink special">
+					</div>
+				</div>
+		</div>
+		
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-lg-4 col-md">
+					<h4>Burger and Fries</h4>
+					<p class="menu-item">An American Classic!<br />Your choice - with or without cheese<br />
+					Pickle, onion, tomato, and lettuce<br />Served with our famous thick-cut
+					french fries<br />
+					$7.95</p>
+				</div>
+				<div class="col-lg-4 col-md">
+					<h4>Hot Dog and Chips</h4>
+					<p class="menu-item">A Summer Classic!<br />Your choice - white or wheat bun<br />
+					Relish, mustard, and ketchup<br />Served with our house-made chips<br />
+					$7.95</p>
+				</div>
+				<div class="col-lg-4 col-md">
+					<h4>Italian Sausage and Peppers</h4>
+					<p class="menu-item">An All-Time Favorite!<br />Your choice - mild or spicy Cole Slaw<br />
+					Served with garlic mashers<br />
+					$10.95</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md">
+					<h4>Tenderloin Sandwich and Chips</h4>
+					<p class="menu-item">Really Hits the Spot!<br />Plain or Sesame Seed Bun<br />
+					Pickle, onion, tomato, and lettuce<br /> Served with our house-made chips<br />
+					$8.95</p>
+				</div>
+				<div class="col-lg-4 col-md">
+					<h4>House Salad</h4>
+					<p class="menu-item">On the Lighter Side!<br />Your choice - with or without cheese<br />
+					Iceberg lettuce, tomato, peppers<br />Thousand Island or Ranch Dressing<br />
+					Served with a dinner roll<br />$6.95</p>
+				</div>
+				<div class="col-lg-4 col-md">
+					<h4>Brisket Sandwich and Fries</h4>
+					<p class="menu-item">A Taste of Texas!<br />Smoked Brisket on thick-cut<br />Texas Toast<br />Cole Slaw<br />
+					Served with our famous thick-cut<br />french fries<br />$7.95</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md">
+					<table>
+						<tr>
+							<th>Beverages</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		
+		<footer>
+			<hr />
+			<p>552 Hungry Avenue S, Small Town, 55555 <br />
+			123-456-7890</p>
+		</footer>
+		
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	</body>
+		
+	
+	
+</html>

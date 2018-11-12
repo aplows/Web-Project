@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+	Name: Anthony Plows
+	Date Created: 4 Nov 2018
+	Most recent revision:
+	
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Let's play Lucky 7</title>
+		
+		<script type="text/JavaScript" src="scripts/game7.js"></script>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<!-- internal stylesheet -->
+		<style>
+			label {
+				font-weight: bold;}
+				
+			.center-button {
+				margin-left:auto;
+				margin-right:auto;
+				display:block;}
+				
+			.container-sized {
+				max-width: 600px;}
+				
+			h5, h1 {
+				text-align: center;}
+				
+			table { 
+				border:3px solid black;}
+				
+			th, td {
+				border: 1px solid black;
+				border-collapse: collapse;} 
+			
+			td {
+				text-align: left;
+				width: 70%}
+		</style>
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>Lucky Sevens</h1><br />
+		</header>
+		
+		<noscript>
+			<h5>JavaScript is not enabled! This game relies on JavaScript to function!</h5>
+		</noscript>
+    	
+		<div class="container container-sized">
+		
+			<form name="game7" onsubmit="return playGame();">
+				<div class="form-group row">
+					<label for="bet" class="col-sm-8 col-form-label">Starting Bet:</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="bet" placeholder="$0.00">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<div class="col-sm">
+						<button type="submit" class="btn btn-default center-button">Play</button>
+					</div>
+				</div>
+			</form>
+			
+			<div id="results">
+			
+				<hr />
+				<h1>Results</h1><br />
+				
+				<table id="numbers" class="table table-striped" border="1">
+					<tbody>
+						<tr>
+							<td>Starting Bet</td>
+							<td><span id="starting"></span></td>
+						</tr>
+						<tr>
+							<td>Total Rolls Before Going Broke</td>
+							<td><span id="broke-rolls"></span></td>
+						</tr>
+						<tr>
+							<td>Highest Amount Won</td>
+							<td><span id="high-win"></span></td>
+						</tr>
+						<tr>
+							<td>Roll Count at Highest Amount Won</td>
+							<td><span id="high-rolls"></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+					
+		</div>
+	
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+	</body>
+		
+	
+	
+</html>

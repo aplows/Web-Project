@@ -1,0 +1,35 @@
+/*
+	Name: Anthony Plows
+	Date Created: 4 Nov 2018
+	Most recent revision:
+*/
+
+header { 
+	text-align: center;
+	font-family: sans-serif, arial;
+	color:#666633;
+	}
+
+footer {
+	text-align: center;
+	background-color: #666633;
+	}
+
+
+a {
+	color:#FFFFFF;
+	background-color:#666633;
+	}
+	
+a:visited {
+	color: red;}
+	
+a:hover {
+	font-weight: bold;}
+	
+a:active {
+	text-decoration: non;}
+
+
+
+
